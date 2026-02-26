@@ -2,17 +2,17 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --white: #111111;
-  --off-white: #222222;
-  --dim: rgba(0,0,0,0.65);
-  --dimmer: rgba(0,0,0,0.45);
+  --white: #0a0a0a;
+  --off-white: #2a2a2a;
+  --dim: rgba(0,0,0,0.55);
+  --dimmer: rgba(0,0,0,0.35);
   --black: #ffffff;
-  --dark: #f8f9fa;
-  --dark2: #f1f3f5;
-  --red: #e5232a;
-  --red-dark: #b01920;
-  --border: rgba(0,0,0,0.08);
-  --border-red: rgba(229,35,42,0.3);
+  --dark: #fafbfc;
+  --dark2: #f4f5f7;
+  --red: #d31d24;
+  --red-dark: #a8161c;
+  --border: rgba(0,0,0,0.04);
+  --border-red: rgba(211,29,36,0.15);
   --font-display: 'Barlow Condensed', sans-serif;
   --font-body: 'Barlow', sans-serif;
 }
@@ -69,7 +69,7 @@ nav {
   padding: 0 48px;
   height: 72px;
   background: rgba(0,0,0,0.85);
-  backdrop-filter: blur(24px);
+  backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
   transition: background 0.3s;
 }
@@ -79,7 +79,7 @@ nav.scrolled { background: rgba(0,0,0,0.98); }
   font-family: var(--font-display);
   font-weight: 900;
   font-size: 26px;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   color: var(--white);
   text-decoration: none;
   transition: opacity 0.2s;
@@ -91,7 +91,7 @@ nav.scrolled { background: rgba(0,0,0,0.98); }
 .nav-links a {
   font-size: 13px;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--dim);
   text-decoration: none;
@@ -118,7 +118,7 @@ nav.scrolled { background: rgba(0,0,0,0.98); }
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 14px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
@@ -129,7 +129,7 @@ nav.scrolled { background: rgba(0,0,0,0.98); }
 .nav-cta:hover {
   background: var(--red-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(229,35,42,0.4);
+  box-shadow: 0 8px 24px rgba(211,29,36,0.15);
 }
 
 .hamburger {
@@ -191,7 +191,7 @@ nav.scrolled { background: rgba(0,0,0,0.98); }
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 15px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
@@ -202,7 +202,7 @@ nav.scrolled { background: rgba(0,0,0,0.98); }
 .btn-primary:hover {
   background: var(--red-dark);
   transform: translateY(-3px);
-  box-shadow: 0 12px 36px rgba(229,35,42,0.45);
+  box-shadow: 0 12px 36px rgba(211,29,36,0.2);
 }
 .btn-full { width: 100%; justify-content: center; }
 
@@ -216,7 +216,7 @@ nav.scrolled { background: rgba(0,0,0,0.98); }
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 15px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid rgba(0,0,0,0.25);
@@ -252,7 +252,7 @@ nav.scrolled { background: rgba(0,0,0,0.98); }
 .btn-whatsapp:hover { background: #1fbb5c; transform: translateY(-3px); box-shadow: 0 10px 30px rgba(37,211,102,0.3); }
 
 /* ── SECTION COMMONS ── */
-section { padding: 120px 0; position: relative; }
+section { padding: 160px 0; position: relative; }
 
 .section-head { text-align: center; margin-bottom: 70px; }
 
@@ -283,7 +283,7 @@ section { padding: 120px 0; position: relative; }
   font-weight: 900;
   font-size: clamp(48px, 6vw, 84px);
   line-height: 0.95;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--white);
 }
@@ -481,7 +481,7 @@ section { padding: 120px 0; position: relative; }
 .stat-l {
   font-size: 11px;
   font-weight: 600;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--dimmer);
   margin-top: 6px;
@@ -593,7 +593,7 @@ section { padding: 120px 0; position: relative; }
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 22px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 14px;
 }
@@ -625,7 +625,7 @@ section { padding: 120px 0; position: relative; }
   border-color: var(--red);
   background: linear-gradient(160deg, rgba(229,35,42,0.08) 0%, var(--dark) 60%);
 }
-.price-card.featured:hover { box-shadow: 0 24px 60px rgba(229,35,42,0.25); }
+.price-card.featured:hover { box-shadow: 0 24px 60px rgba(211,29,36,0.15); }
 
 .pc-popular {
   position: absolute;
@@ -637,7 +637,7 @@ section { padding: 120px 0; position: relative; }
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 11px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   padding: 4px 16px;
   white-space: nowrap;
@@ -648,7 +648,7 @@ section { padding: 120px 0; position: relative; }
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 13px;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--dim);
   margin-bottom: 10px;
@@ -686,7 +686,7 @@ section { padding: 120px 0; position: relative; }
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 13px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   text-decoration: none;
   transition: all 0.25s;
@@ -829,7 +829,7 @@ section { padding: 120px 0; position: relative; }
 .reel-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.06);
+  background: rgba(0,0,0,0.03);
   display: flex;
   align-items: flex-end;
   padding: 20px;
@@ -844,7 +844,7 @@ section { padding: 120px 0; position: relative; }
   color: #ffffff !important; var(--font-display);
   font-weight: 700;
   font-size: 13px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--white);
   text-decoration: none;
@@ -858,7 +858,7 @@ section { padding: 120px 0; position: relative; }
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 11px;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--red);
   margin-bottom: 6px;
@@ -868,7 +868,7 @@ section { padding: 120px 0; position: relative; }
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 20px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   color: var(--white);
 }
 
@@ -905,7 +905,7 @@ section { padding: 120px 0; position: relative; }
   transition: transform 0.35s;
   transform-origin: bottom;
 }
-.team-card:hover { border-color: rgba(229,35,42,0.3); transform: translateY(-5px); box-shadow: 0 20px 60px rgba(0,0,0,0.06); }
+.team-card:hover { border-color: rgba(229,35,42,0.3); transform: translateY(-5px); box-shadow: 0 20px 60px rgba(0,0,0,0.03); }
 .team-card:hover::before { transform: scaleY(1); }
 
 .tm-visual {
@@ -920,7 +920,7 @@ section { padding: 120px 0; position: relative; }
   font-family: var(--font-display);
   font-weight: 900;
   font-size: 36px;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   color: var(--white);
   background: var(--dark2);
   border: 1px solid var(--border);
@@ -934,7 +934,7 @@ section { padding: 120px 0; position: relative; }
 .tm-glow {
   position: absolute;
   inset: -4px;
-  background: radial-gradient(circle, rgba(229,35,42,0.2) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(211,29,36,0.05) 0%, transparent 70%);
   animation: glowBeat 3s ease-in-out infinite;
 }
 @keyframes glowBeat {
@@ -946,14 +946,14 @@ section { padding: 120px 0; position: relative; }
   font-family: var(--font-display);
   font-weight: 900;
   font-size: 28px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   margin-bottom: 8px;
 }
 .tm-role {
   font-size: 12px;
   font-weight: 600;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--red);
   margin-bottom: 14px;
@@ -988,7 +988,7 @@ section { padding: 120px 0; position: relative; }
 .cf-group label {
   font-size: 11px;
   font-weight: 600;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--dimmer);
 }
@@ -1030,7 +1030,7 @@ section { padding: 120px 0; position: relative; }
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 16px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--white);
@@ -1117,7 +1117,7 @@ footer {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 12px;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--white);
   margin-bottom: 20px;
@@ -1140,7 +1140,7 @@ footer {
   justify-content: space-between;
   font-size: 12px;
   color: var(--dimmer);
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 /* ── KEYFRAMES ── */
